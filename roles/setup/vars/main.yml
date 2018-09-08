@@ -14,7 +14,7 @@ applications:
 
 # homebrew cask applications
 cask_applications:
-  - google-chrome
+  - chromium
   - firefox
   - iterm2
   - caffeine
@@ -24,6 +24,14 @@ cask_applications:
   - steam
   - nextcloud
   - keepassxc
+  - viscosity
+  - keepassxc
+  - etcher
+  - libreoffice
+  - vlc
+  - teamviewer
+  - telegram
+  - the-unarchiver
 
     #downloads:
     #  zwift:
