@@ -32,3 +32,6 @@ If you want to undo all the changes that `setupmac` did, run
 ```
 start.sh uninstall
 ```
+#### Credits
+
+Original idea and code [Daemonza](https://github.com/daemonza/setupmac).
