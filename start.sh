@@ -26,7 +26,8 @@ echo "Setting up your mac using daemonza/setupmac"
 echo "==========================================="
 
 sudo easy_install pip
-sudo easy_install ansible
+sudo pip install cryptography
+sudo pip install ansible
 
 installdir="/tmp/setupmac-$RANDOM"
 mkdir $installdir
@@ -38,7 +39,7 @@ if [ ! -d $installdir ]; then
     exit 1
 else
     cd $installdir 
-    ansible-playbook -i ./hosts playbook.yml --verbose
+    ansible-playbook -i ./hosts playbook.yml -K --verbose
 fi
 
 echo "cleaning up..."
