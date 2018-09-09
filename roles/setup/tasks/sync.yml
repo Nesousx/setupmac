@@ -1,0 +1,22 @@
+---
+- name: Sync all data with local NAS
+  synchronize:
+  mode: pull
+  src: rsync://nesonas/srv/data/bkp/nesobox/nextcloud/nesousx/
+  dest: ~/
+
+- file:
+    path: ~/.ssh/config
+    mode: 0600
+
+- file:
+    path: ~/.ssh/id_rsa
+    mode: 0600
+
+- file:
+    path: ~/.ssh/id_nesonas
+    mode: 0600
+
+- file:
+    path: ~/.ssh/id_ansible
+    mode: 0600
