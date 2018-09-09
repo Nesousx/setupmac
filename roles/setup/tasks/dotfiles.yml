@@ -5,3 +5,8 @@
   git:
     repo: https://github.com/nesousx/dotfiles.git
     dest: ~/.dotiles
+
+- file:
+    src: ~/.dotiles/zshrc
+    dest: ~/.zshrc
+    state: link

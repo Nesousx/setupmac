@@ -25,6 +25,7 @@ echo "==========================================="
 echo "Setting up your mac using daemonza/setupmac"
 echo "==========================================="
 
+xcode-select --install
 sudo easy_install pip
 sudo pip install cryptography
 sudo pip install ansible
